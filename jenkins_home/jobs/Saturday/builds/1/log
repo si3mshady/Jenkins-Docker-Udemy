@@ -1,0 +1,8 @@
+Started by user [8mha:////4OLSu55FtmWL2Ynn5vfDyPXAya9loe6FzgIFwEpGiEGpAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZ+/dLi1CL94kzj3OKMxJRKABp4nYLEAAAA[0mElliott
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Saturday
+[Saturday] $ /bin/sh -xe /tmp/jenkins5784925838564869249.sh
++ echo /var/jenkins_home/workspace/Saturday
+/var/jenkins_home/workspace/Saturday
++ mkdir SATURDAY
+Finished: SUCCESS
