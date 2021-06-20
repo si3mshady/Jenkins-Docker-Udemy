@@ -11,15 +11,14 @@ job('Auto trigger DSL Job' ) {
     }
                      
             
-    }
+    
 
      steps {
         shell("""        
             echo "God is awesome, thank you Jesus!"
+			echo "Read the Bible every day"
         
         """)
     }
-
-
 }
-}
+

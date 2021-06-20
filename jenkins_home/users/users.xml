@@ -3,6 +3,10 @@
   <version>1</version>
   <idToDirectoryNameMap class="concurrent-hash-map">
     <entry>
+      <string>root</string>
+      <string>root_451699219705736770</string>
+    </entry>
+    <entry>
       <string>si3mshady</string>
       <string>si3mshady_7852960286585491137</string>
     </entry>

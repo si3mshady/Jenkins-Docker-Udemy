@@ -1,22 +1,30 @@
-Started on Jun 20, 2021 12:56:31 AM
-Started by event from 140.82.115.243 ⇒ http://54.226.75.133:8080/github-webhook/ on Sun Jun 20 00:56:31 UTC 2021
-Polling SCM changes on master
-Using strategy: Default
-[poll] Last Built Revision: Revision f76d7a5ed57a239782154887fb1a3d1c1566cd3e (origin/main)
+Started by GitHub push by si3mshady
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Saturday
 The recommended git tool is: NONE
 using credential github
  > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Saturday/.git # timeout=10
-Fetching changes from the remote Git repositories
+Fetching changes from the remote Git repository
  > git config remote.origin.url https://github.com/si3mshady/Jenkins-Docker-Udemy.git # timeout=10
 Fetching upstream changes from https://github.com/si3mshady/Jenkins-Docker-Udemy.git
  > git --version # timeout=10
  > git --version # 'git version 2.20.1'
 using GIT_ASKPASS to set credentials pw to github account
  > git fetch --tags --force --progress -- https://github.com/si3mshady/Jenkins-Docker-Udemy.git +refs/heads/*:refs/remotes/origin/* # timeout=10
-Polling for changes in
 Seen branch in repository origin/main
 Seen 1 remote branch
  > git show-ref --tags -d # timeout=10
- > git log --full-history --no-abbrev --format=raw -M -m f76d7a5ed57a239782154887fb1a3d1c1566cd3e..9100b4c05921c42854cd7bfae854cdb3b6b0383a # timeout=10
-Done. Took 0.2 sec
-Changes found
+Checking out Revision 9100b4c05921c42854cd7bfae854cdb3b6b0383a (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9100b4c05921c42854cd7bfae854cdb3b6b0383a # timeout=10
+Commit message: "added Jenkinsfile"
+ > git rev-list --no-walk f76d7a5ed57a239782154887fb1a3d1c1566cd3e # timeout=10
+Processing DSL script Jenkinsfile
+ERROR: startup failed:
+Jenkinsfile: 24: unexpected token: } @ line 24, column 1.
+   }
+   ^
+
+1 error
+
+Finished: FAILURE

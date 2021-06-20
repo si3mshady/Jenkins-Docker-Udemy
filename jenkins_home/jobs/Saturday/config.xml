@@ -34,6 +34,29 @@
   <builders>
     <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.77">
       <targets>Jenkinsfile</targets>
+      <scriptText>job(&apos;Auto trigger DSL Job&apos; ) {
+    
+   description(&apos;Auto trigger DSL Job&apos;)
+
+   
+
+    scm {
+        git(&apos;https://github.com/si3mshady/Jenkins-Docker-Udemy.git&apos;, &apos;main&apos;)
+        
+
+    }
+                     
+            
+    
+
+     steps {
+        shell(&quot;&quot;&quot;        
+            echo &quot;God is awesome, thank you Jesus!&quot;
+			echo &quot;Read the Bible every day&quot;
+        
+        &quot;&quot;&quot;)
+    }
+}</scriptText>
       <usingScriptText>false</usingScriptText>
       <sandbox>false</sandbox>
       <ignoreExisting>false</ignoreExisting>
