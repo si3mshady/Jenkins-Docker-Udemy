@@ -1,0 +1,57 @@
+Started by user [8mha:////4OLSu55FtmWL2Ynn5vfDyPXAya9loe6FzgIFwEpGiEGpAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZ+/dLi1CL94kzj3OKMxJRKABp4nYLEAAAA[0mElliott
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Auto trigger DSL Job
+The recommended git tool is: NONE
+using credential github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Auto trigger DSL Job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/si3mshady/Jenkins-Docker-Udemy.git # timeout=10
+Fetching upstream changes from https://github.com/si3mshady/Jenkins-Docker-Udemy.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+using GIT_ASKPASS to set credentials pw to github account
+ > git fetch --tags --force --progress -- https://github.com/si3mshady/Jenkins-Docker-Udemy.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+Checking out Revision 1525c0681ad95583880b79d8111ac8c3be3df189 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1525c0681ad95583880b79d8111ac8c3be3df189 # timeout=10
+Commit message: "Jenkinfile"
+ > git rev-list --no-walk 1525c0681ad95583880b79d8111ac8c3be3df189 # timeout=10
+ > git tag -a -f -m Jenkins Build #2 jenkins-Auto_trigger_DSL_Job-2 # timeout=10
+FATAL: Could not apply tag jenkins-Auto_trigger_DSL_Job-2
+hudson.plugins.git.GitException: Command "git tag -a -f -m Jenkins Build #2 jenkins-Auto_trigger_DSL_Job-2" returned status code 128:
+stdout: 
+stderr: 
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'root@9ee3ca150223.(none)')
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2661)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2591)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2587)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1958)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1970)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.tag(CliGitAPIImpl.java:1837)
+Caused: hudson.plugins.git.GitException: Could not apply tag jenkins-Auto_trigger_DSL_Job-2
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.tag(CliGitAPIImpl.java:1839)
+	at hudson.plugins.git.GitAPI.tag(GitAPI.java:293)
+	at hudson.plugins.git.extensions.impl.PerBuildTag.onCheckoutCompleted(PerBuildTag.java:30)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1386)
+	at hudson.scm.SCM.checkout(SCM.java:505)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1213)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:639)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:511)
+	at hudson.model.Run.execute(Run.java:1911)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:100)
+	at hudson.model.Executor.run(Executor.java:433)
+Finished: FAILURE

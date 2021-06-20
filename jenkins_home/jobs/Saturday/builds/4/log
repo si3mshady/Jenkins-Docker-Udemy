@@ -1,0 +1,25 @@
+Started by GitHub push by si3mshady
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Saturday
+The recommended git tool is: NONE
+using credential github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Saturday/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/si3mshady/Jenkins-Docker-Udemy.git # timeout=10
+Fetching upstream changes from https://github.com/si3mshady/Jenkins-Docker-Udemy.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+using GIT_ASKPASS to set credentials pw to github account
+ > git fetch --tags --force --progress -- https://github.com/si3mshady/Jenkins-Docker-Udemy.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/main
+Seen 1 remote branch
+ > git show-ref --tags -d # timeout=10
+Checking out Revision 1525c0681ad95583880b79d8111ac8c3be3df189 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1525c0681ad95583880b79d8111ac8c3be3df189 # timeout=10
+Commit message: "Jenkinfile"
+ > git rev-list --no-walk 9100b4c05921c42854cd7bfae854cdb3b6b0383a # timeout=10
+Processing DSL script Jenkinsfile
+Added items:
+    GeneratedJob{name='Auto trigger DSL Job'}
+Finished: SUCCESS

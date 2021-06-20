@@ -5,8 +5,12 @@
   <fileName>Credential id=github name=si3mshady/****** (pw to github account)</fileName>
   <usages>
     <entry>
+      <string>Auto trigger DSL Job</string>
+      <ranges>2</ranges>
+    </entry>
+    <entry>
       <string>Saturday</string>
-      <ranges>2-3</ranges>
+      <ranges>2-4</ranges>
     </entry>
   </usages>
   <facets/>
